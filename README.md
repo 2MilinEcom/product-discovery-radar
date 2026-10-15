@@ -1,16 +1,23 @@
 # Product Discovery Radar
 
-Streamlit product and content discovery dashboard with scoring and local storage.
+I built Product Discovery Radar to compare potential products and keep the research in one place. I can scan candidates, inspect scores, and explore content angles before spending more time on a product.
 
-## Technology
+I separated product discovery, content research, and scoring into their own modules. I store results locally and use the dashboard pages to work through the discovery funnel and creative planning.
 
-Python, Streamlit, SQLite.
+## Built with
 
-## Run locally
+I used Python, Streamlit, pandas, and SQLite.
 
-Create a Python virtual environment, install `requirements.txt`, then run `streamlit run app.py`. Supply your own integration settings through a local `.env` file. No database or API credentials are bundled.
+## Inside the project
 
-## Portfolio snapshot
+* `app.py`: the main dashboard.
+* `pages/`: discovery and creative research screens.
+* `scanner.py`: product discovery.
+* `scoring.py`: product scoring.
+* `database.py`: local storage.
 
-This repository contains a source snapshot of a personal project. Personal records, credentials, browser sessions, local databases, and generated output are excluded. Use your own configuration and fictional data when evaluating it. Some integrations require external accounts or additional setup. This is a development project, with feature limitations documented in the source and guides.
+## Running it
 
+I install `requirements.txt` in a Python environment and start the dashboard with `streamlit run app.py`. I supply my own integration settings in a local `.env` file.
+
+I treat the scores as research aids, not predictions of sales. Live discovery depends on the configured sources.
